@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 import React, { useState, useEffect } from "react";
-import Contact from './Contact.model';
+import Contact from '../models/Contact.model';
 import ContactComp from './ContactComp';
 import AddFormContact from './AddFormContact';
 

@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import PropTypes from 'prop-types'
-import Contact from './Contact.model'
+import Contact from '../models/Contact.model'
 import '../styles/contactComponent.scss'
-
-
 
 const ContactComp= ({contact, addContact, removeContact, toggleConect}) =>{
   useEffect(() => {

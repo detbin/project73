@@ -1,14 +1,12 @@
 import './App.css';
 import './componentes/ContactList'
 import ContactList from './componentes/ContactList';
+import Ejercicio101112 from './Ejercicio101112'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        CONTACT LIST   
-      <ContactList></ContactList>
-      </header>
+    <div>
+      <Ejercicio101112></Ejercicio101112>
     </div>
   );
 }

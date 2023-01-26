@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Contact from "./Contact.model";
+import Contact from '../models/Contact.model';
 
 const AddFormContact = ({ addContact, amountContact }) => {
   const index = useRef();
