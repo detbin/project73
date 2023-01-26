@@ -1,0 +1,7 @@
+    {ContactComp.Map((contact,index)=>{
+        return(
+                <ContactComp
+                key={index}
+                contact={contact}>
+                </ContactComp>)
+        })}
