@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Contact from '../models/Contact.model';
 import ContactComp from './ContactComp';
 import AddFormContact from './AddFormContact';
+import AddFormContactformik from './AddFormContactformik'
 
 
 
@@ -11,7 +12,7 @@ const ContactList = () => {
 
     const [contact, setContact] = useState(null)
 
-    const handleAddContact = (contactParam) => {
+    const handleAddContactformik = (contactParam) => {
       setContact([...contact, contactParam]);
     };
 
@@ -71,7 +72,7 @@ const ContactList = () => {
                 <ContactComp
                 key={ind}
                 contact={contactElement}
-                addContact={handleAddContact}
+                addContact={handleAddContactformik}
                 removeContact={handleRemoveContact}
                 toggleConect={handleConectContact}>
                 </ContactComp>)
@@ -82,7 +83,7 @@ const ContactList = () => {
      ):(
           <p className="h3 text-center w-100 py-5">There are not contacts</p>
     )}
-    <AddFormContact addContact={handleAddContact} amountContact={contact.length} />
+    <AddFormContactformik addContact={handleAddContactformik} amountContact={contact.length} />
   </>
   );
 };
