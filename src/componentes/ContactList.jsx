@@ -12,7 +12,7 @@ const ContactList = () => {
 
     const [contact, setContact] = useState(null)
 
-    const handleAddContactformik = (contactParam) => {
+    const handleAddContact = (contactParam) => {
       setContact([...contact, contactParam]);
     };
 
@@ -72,7 +72,7 @@ const ContactList = () => {
                 <ContactComp
                 key={ind}
                 contact={contactElement}
-                addContact={handleAddContactformik}
+                addContact={handleAddContact}
                 removeContact={handleRemoveContact}
                 toggleConect={handleConectContact}>
                 </ContactComp>)
@@ -83,7 +83,7 @@ const ContactList = () => {
      ):(
           <p className="h3 text-center w-100 py-5">There are not contacts</p>
     )}
-    <AddFormContactformik addContact={handleAddContactformik} amountContact={contact.length} />
+    <AddFormContact addContact={handleAddContact} amountContact={contact.length} />
   </>
   );
 };
